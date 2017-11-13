@@ -2,8 +2,8 @@ xmlSpike = function()
 {
   library("XML")
   library("methods")
-  url = "https://www.sbir.gov/api/awards.xml?keyword=cbinsights"
-  
+  #url = "https://www.sbir.gov/api/awards.xml?keyword=cbinsights"
+  url = "https://chronicdata.cdc.gov/api/views/5svk-8bnq/rows.xml"
   # Reads into a string
   page = readLines(url)
   
@@ -28,4 +28,19 @@ xml = function(keyword)
   return (pageXML)
 }
 
-xml("cbinsights")
+#xml("cbinsights")
+
+library("jsonlite")
+url = "https://chronicdata.cdc.gov/api/views/5svk-8bnq/"
+page = readLines(url)
+pageJS = fromJSON(page)
+#pageJS$tags
+pageJS$columns
+
+
+# https://demo.ckan.org/api/3/action/package_show?id=adur_district_spending
+# https://catalog.data.gov/dataset/national-health-and-nutrition-examination-survey-nhanes
+
+# For every datat set, there are required fields
+  # Title, Description, Tags, Last Update, Publisher, Contact Name, etc.
+# A collection counts as 1 dataset in total
