@@ -44,3 +44,16 @@ pageJS$columns
 # For every datat set, there are required fields
   # Title, Description, Tags, Last Update, Publisher, Contact Name, etc.
 # A collection counts as 1 dataset in total
+
+
+
+# OTHER PACKAGES
+  # https://www.rstudio.com/products/rpackages/
+  # plumber <web API>, rshiny<web interface>, ggplot, test that, roxygen2 <documentation>, stringr, markdown
+
+# PUBLISH APPS
+  # ApolinarO.shinyapps.io
+  # library(rsconnect)
+  # rsconnect::deployApp('path/to/your/app')
+  # Make sure console is in currrent directory
+  # getwd(), setwd(dir)
