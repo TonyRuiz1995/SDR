@@ -4,7 +4,7 @@
 Apolinar Ortega | Antonio Ruiz | Jacob C Darling
 --- | --- | --- 
 
-## This Week: 11/20/2017
+## This Week: 11/27/2017
 Task | Developer | Risk | Est. Time (hrs) | Actual (hrs) | Progress | Code Review
 --- | --- | --- | --- | --- | --- | ---
 RShiny Spikes | Apolinar  | mid | 4 | 0 | 80% | ...
